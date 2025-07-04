@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const password = document.getElementById('password');
     const confirmPassword = document.getElementById('confirmPassword');
 
-    // Custom password match validation
+ 
     if (password.value !== confirmPassword.value) {
       confirmPassword.setCustomValidity('Passwords do not match');
     } else {
       confirmPassword.setCustomValidity('');
     }
 
-    // If form is invalid
+    
     if (!form.checkValidity()) {
       event.preventDefault();
       event.stopPropagation();
